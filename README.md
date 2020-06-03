@@ -1,5 +1,5 @@
 Quick setup
 
-cd to any directory
+cd to directory
 
 run npm install in command line
