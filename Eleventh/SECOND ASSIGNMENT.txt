@@ -1,0 +1,22 @@
+SECOND ASSIGNMENT
+
+Make a new folder
+Create package.json
+Install package express
+Declare server in app.js
+Listen to port 8000
+
+First API
+Make an index.html file with a form for name and roll number
+Display this index.html
+
+Second API
+Pass inputs from index.html to app.js and console inputs and send to the browser as well
+
+Third API
+Take informations from api that is using parameter and quering. Pass name and roll number.
+Console this and send to the browser as well
+
+Try Testing your apis using Postman
+
+Write 'Done' in Chat on completion of assignment

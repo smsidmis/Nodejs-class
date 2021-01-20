@@ -50,7 +50,7 @@ app.get('/edit/:id',function(req,res){
     console.log("I am in GET /edit")
     var id = req.params.id
     todoModel.find({},function(req,tasks){
-        res.render('todoEdit.ejs',{todoList:tasks,idTask:id})
+        res.render('todoEdit',{todoList:tasks,idTask:id})
     })
 })
 
@@ -67,6 +67,7 @@ app.post('/edit/:id',function(req,res){
             res.send(err)
         else
             res.redirect("/")
+            //localhost:4000/ GET
     })
 
 })
@@ -82,6 +83,7 @@ app.get('/remove/:id',function(req,res){
             res.send(err)
         else
             res.redirect("/")
+            //localhost:4000/ GET
     })
 })
 

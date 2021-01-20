@@ -1,0 +1,11 @@
+FIRST ASSIGNMENT
+
+Make a new folder
+Install package express
+Declare server
+Listen to port 8000
+Define apis on '/', '/hello', '/bye' (Assume GET HTTP request)
+
+Try Testing your apis using Postman
+
+Write 'Done' in Chat on completion of assignment

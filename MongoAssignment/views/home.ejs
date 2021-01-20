@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html> 
+    <head></head> 
+    <body> 
+        <h1>Hobbies</h1>
+        <ul> 
+            <% hobbies.forEach((item)=>{ %> 
+            <li><%= item.name %></li>  
+            <% }); %>
+        </ul> 
+        <br>
+        <form method="POST" action="/">
+            <input name="hobby" type="text">Enter your hobby</input>
+            <button type="submit">Submit</button>
+        </form>
+    </body> 
+</html>					 

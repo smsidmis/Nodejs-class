@@ -1,14 +1,19 @@
-const express = require('express')
-const app = express()
- // localhost:3000/
- //localhost:3000/hi
+const express = require('express') //Importing Packages
+const app = express() //Creating a server
+
+//localhost:4000 OR localhost:4000/
 app.get('/', function (req, res) {
-  res.send('Hello World')
+    res.send('Hi World')
 })
 
-app.get('/hi', function (req, res) {
-  res.send('Hi')
+//localhost:4000/hello
+app.get('/hello', function (req, res) {
+    res.send('Hello World')
 })
- 
-app.listen(3000)
-console.log('Express-Listening to port 3000')
+
+//localhost:4000/bye
+app.get('/bye', function (req, res) {
+    res.send('Bye World')
+})
+
+app.listen(4000) //To listen a particular port where the client will hit

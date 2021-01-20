@@ -1,12 +1,15 @@
 <!DOCTYPE html> 
 <html> 
-<head></head> 
-<body> 
-	<h1>Hobbies of <%= data.name %> are:</h1>
-    <ul> 
-        <% data.hobbies.forEach((item)=>{ %> 
-        <li><%=item%></li>  
-        <% }); %>
-    </ul> 
-</body> 
+    <head></head> 
+    <body> 
+        <h1>Hobbies of <%= data.name %> are:</h1>
+        <ul> 
+            <% data.hobbies.forEach((item)=>{ %> 
+            <li><%= item %></li>  
+            <% }); %>
+            <!-- Logic --- <% %>
+            Output -- <%= %> -->
+        </ul> 
+        <p><%= data.hobbies %></p>
+    </body> 
 </html>					 

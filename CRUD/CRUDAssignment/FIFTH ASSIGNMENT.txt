@@ -1,0 +1,26 @@
+ASSIGNMENT
+
+Make a new folder
+Create package.json ---- npm init
+Install necessary packages ---- express, mongoose
+Start server 
+Listen to a port
+Connect to MongoDB Atlas
+
+DATABASE:-
+Companies collection
+Each company should have a name, number of depts, location
+
+CRUD operations on collection
+For U-Update -> Perform only update of No. of depts
+
+Try Testing your apis using Postman
+
+Write 'Done' in Chat on completion of this assignment
+
+
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({extended: true}))
+findByIdAndUpdate
+findByIdAndRemove
+mongoose.set('useFindAndModify',false)

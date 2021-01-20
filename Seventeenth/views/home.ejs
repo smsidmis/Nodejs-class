@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+  <head>
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-</head>
-<body>
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+  </head>
+  <body>
 
-<h2>HTML Table</h2>
+    <h2>HTML Table</h2>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Age</th>
-    <th>Department</th>
-  </tr>
-    <% studs.forEach((stud)=>{ %>
-        <tr>
-        <td><%= stud.name %></td>
-        <td><%= stud.age %></td>
-        <td><%= stud.dept %></td>
-        </tr>
-    <% }) %>
-</table>
-</body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Department</th>
+      </tr>
+        <% studs.forEach((stud)=>{ %>
+            <tr>
+            <td><%= stud.name %></td>
+            <td><%= stud.age %></td>
+            <td><%= stud.dept %></td>
+            </tr>
+        <% }) %>
+    </table>
+  </body>
 </html>				 

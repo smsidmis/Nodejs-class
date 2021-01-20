@@ -1,0 +1,13 @@
+CRUD ASSIGNMENT
+
+Create a new folder
+Create package.json
+Install necessary packages
+
+Start a server
+Write CRUD operations for Companies in-memory data
+
+Test using Postman at last
+
+Write 'Done' in chat after completion
+Feel free to ask Doubts if any :)

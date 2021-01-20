@@ -1,0 +1,19 @@
+THIRD ASSIGNMENT
+
+Make a new folder
+Create package.json
+Install package express,ejs
+Start server in app.js
+Listen to port 4000
+
+Send data from app.js to home.ejs
+Data :-
+1. Name of the company
+2. List of departments
+
+Display in home.ejs :-
+Heading - Name of the company and List of departments
+
+Try Testing your apis using Postman
+
+Write 'Done' in Chat on completion of assignment

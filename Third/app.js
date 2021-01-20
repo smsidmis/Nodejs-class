@@ -12,8 +12,9 @@ var sayBye = function(){
 
 sayBye()
 
-function callFunction(fun){
-    fun()
+//Arrow function
+say = () => {
+    console.log('say')
 }
 
-callFunction(sayHi)
+say()

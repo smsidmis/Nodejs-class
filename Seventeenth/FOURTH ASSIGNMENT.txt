@@ -1,0 +1,30 @@
+FOURTH ASSIGNMENT
+
+Make a new folder
+Create package.json
+Install necessary packages
+Start server and connect to MongoDB Atlas
+Listen to port
+
+DATABASE:-
+Companies collection
+Each company should have a name, number of depts, location
+
+FIRST API-
+READ operation on the DB 
+
+SECOND API-
+Create operation on the DB
+
+Querying on DB - 
+
+THIRD API-
+Query for Location in Bangalore
+
+FOURTH API-
+localhost:4000/location/dept/:number_of_dept
+Query for Location in Bangalore and number of departments greater than parameter mentioned in API
+
+Try Testing your apis using Postman
+
+Write 'Done' in Chat on completion of assignment

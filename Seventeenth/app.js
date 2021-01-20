@@ -1,11 +1,13 @@
 var express = require('express'); 
 var app = express();
+var PORT = 4000;
 
 app.set('view engine', 'ejs');
 
 var bodyParser = require('body-parser')
 //use this when using postman
-app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true}))
+//app.use(bodyParser.json())
 
 //Connection to Database
 var mongoose = require('mongoose')
@@ -33,8 +35,8 @@ app.get('/', (req, res)=>{
             res.send(err)
         else
         {
-            //console.log(students)
-            res.render('home', {studs : students}); 
+            console.log(students)
+            res.render('home.ejs', {studs : students}); 
         }
     }) 
 }); 
@@ -55,18 +57,21 @@ app.post('/',function(req,res){
 
 //Query
 //Get all students of certain age
-app.get('/age/:ageNo',function(req,res){
-    studModel.find( { age : req.params.ageNo} , function(err,students){
+//localhost:4000/age/20
+//localhost:4000/age/10/30
+//ageNo --- 20
+app.get('/age/:greater/:less',function(req,res){
+    studModel.find( {age: { $gt: req.params.greater, $lt: req.params.less },dept : "IOT"}, 'name', function(err,students){
         if(err)
             res.send(err)
         else
         {
-            //console.log(students)
-            res.render('home', {studs : students}); 
+            console.log(students)
+            res.render('home.ejs', {studs : students}); 
         }
     }) 
 })
 
-app.listen(4000, function(){ 
-    console.log('Listening to port 4000') 
+app.listen(PORT, function(){ 
+    console.log('Listening to port '+ PORT) 
 })

@@ -1,6 +1,11 @@
-var exported = require('./print.js')
+const exported = require('./print.js')
 
-//exported()
+console.log(exported)
 
 exported.sayBye()
-console.log(exported.n)
+exported.say123()
+console.log(exported.num)
+
+
+// exported.sayBye()
+// console.log(exported.n)
